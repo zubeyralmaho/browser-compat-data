@@ -5061,7 +5061,10 @@
             "firefox": [
               {
                 "version_added": "23",
-                "notes": "Callback parameter is a `DOMHighResTimestamp`. This means ten microsecond precision and zero time as `performance.now()`."
+                "notes": [
+                  "Callback parameter is a `DOMHighResTimestamp`. This means ten microsecond precision and zero time as `performance.now()`.",
+                  "Before Firefox 130, the method returned `long` instead of `unsigned long`. See [bug 1909462](https://bugzil.la/1909462)."
+                ]
               },
               {
                 "prefix": "moz",
@@ -5078,7 +5081,8 @@
             ],
             "firefox_android": [
               {
-                "version_added": "23"
+                "version_added": "23",
+                "notes": "Before Firefox 130, the method returned `long` instead of `unsigned long`. See [bug 1909462](https://bugzil.la/1909462)."
               },
               {
                 "prefix": "moz",
