@@ -1122,7 +1122,7 @@
             },
             "firefox": {
               "version_added": "1.5",
-              "notes": "Since Firefox 48, the Windows key is no longer treated as a `meta` key."
+              "notes": "From Firefox 48 to 117, the Windows key was not treated as a `meta` key. See [bug 1266437](https://bugzil.la/1266437)."
             },
             "firefox_android": "mirror",
             "ie": {
